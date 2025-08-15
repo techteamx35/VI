@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Search Results</title>
+    <style>
+        body {
+            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+            margin: 10px;
+            background: #101820;
+            color: #00ff99;
+        }
+        h2#title {
+            color: #00ff99;
+            text-shadow: 0 0 8px #00ff99, 0 0 2px #00ff99;
+            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+        }
+        #results-container {
+            background: rgba(16, 24, 32, 0.98);
+            border-radius: 8px;
+            box-shadow: 0 0 20px #00ff99a0;
+            padding: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 13px;
+            background: #101820;
+            color: #00ff99;
+            box-shadow: 0 0 10px #00ff9955;
+        }
+        th, td {
+            border: 1.5px solid #00ff99;
+            padding: 6px 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #101820;
+            color: #00ff99;
+            font-size: 14px;
+            text-shadow: 0 0 8px #00ff99, 0 0 2px #00ff99;
+        }
+        .class-selector {
+            padding: 2px 8px;
+            background-color: #101820;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+            margin: 2px;
+            display: inline-block;
+            color: #00ff99;
+            border: 1.5px solid #00ff99;
+            box-shadow: 0 0 6px #00ff9955;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+        }
+        .class-selector:hover {
+            background-color: #00ff99;
+            color: #101820;
+            box-shadow: 0 0 12px #00ff99;
+        }
+        ::selection {
+            background: #00ff99;
+            color: #101820;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+            background: #101820;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #00ff99;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="title">Loading Results...</h2>
+    <div id="results-container">
+        <table id="results-table">
+            </table>
+    </div>
+
+    <script src="results.js"></script>
+</body>
+</html>
